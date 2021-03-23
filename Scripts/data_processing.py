@@ -13,28 +13,55 @@ spark = SparkSession \
 logging.basicConfig(stream=sys.stdout)
 
 class data_processing:
-    
+        
+    """
+        Class data_processing (processing and warehousing)
+        
+        - Reads the JSON from Local drive using PySpark
+        - Removes the duplicate values
+        - Creates two tables (currency and historical records)
+        - Pushes them to PostgreSQL database as two different tables using PySpark JDBC as well as using Python sqlalchemy engine )
+        - Logs the entire process
+        
+        Arguments
+        - json_read_path -> str - Path to read the saved JSON data
+        - psql_creds -> dict - Holds the credentials and info of the PostgreSQL database
+        
+        psql_creds = {'databasename':'hist_layer','username':'user','password':'pass','host':'localhost:5432'}
+    """
     def __init__(self, json_read_path, psql_creds):
         
         """ 
             psql_creds - dict
-                - databasename, username, password
+                - databasename, username, password, host
+                
+            json_read_path - Path to read the saved JSON data
         """
         if json_read_path is None:
         	self.json_read_path = os.getcwd()
 
-        self.psql_creds = psql_creds
+        # Creating logger
         self.LOGGER = logging.getLogger(type(self).__name__)
         self.LOGGER.setLevel(logging.INFO)
+        self.psql_creds = psql_creds
+        
+        # Calls all the process [read_json, remove duplicates, push to PostgreSQL]
         self.process()
-        pass
     
     def process(self):
+                
+        # Master script to call the entire process
         df = self.json_to_spark_df()
         self.create_currency_hist_tables(df)
         self.push_to_psql()
     
     def json_to_spark_df(self):
+                
+        """
+            - Reads the JSON file from path using PySpark as PySpark dataframe
+            - Removes dulpicate records
+            - Displays the top 5 rows 
+        """
         
         path = """{json_read_path}/currency_hist_records.json""".format(json_read_path = self.json_read_path)
         
@@ -58,11 +85,23 @@ class data_processing:
         
     def create_currency_hist_tables(self, df):
         
+        """
+            - Creates two PySpark dataframes
+                1. self.currency_df --> Holds information of all the currencies available
+                2. self.historical_data_df --> Holds information of all the historical records
+        """
+        
         self.currency_df = df.select('currency')
         self.historical_data_df = df
         
         
     def push_to_psql(self):
+        
+         """
+            - Connects to PostgreSQL using Spark JDBC as well as Pandas (sqlalchemy)
+            - If JDBC fails by any chance, automatically Python pushes the tables to PostgreSQL using sqlalchemy engine
+        """
+        
         
         databasename = self.psql_creds['databasename']
         username = self.psql_creds['username']
