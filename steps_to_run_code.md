@@ -8,8 +8,8 @@
 	- Open input.json file (This holds all the input configs to be passed to the jobs)
 	- Edit the input.json and provide the required arguments
 
-**	EX: 
-****		{
+	**EX:**
+		{
 		"data_preparation_target_file_system" : "local",
 		"data_preparation_target_path" : None,
 		"data_preparation_target_file_name": None,
@@ -18,7 +18,7 @@
 		"data_processing_json_read_path" : None,
 		"data_processing_psql_creds": {'databasename':'hist_layer','username':'user','password':'pass'}
 
-		}**
+		}
 
 
 	- Run command in terminal "airflow scheduler"
