@@ -5,7 +5,7 @@
 	"data_preparation_s3_creds" : None,
 	"data_preparation_s3_bucket" : None,
 	"data_processing_json_read_path" : None,
-	"data_processing_psql_creds": {'databasename':'hist_layer','username':'user','password':'pass'}
+	"data_processing_psql_creds": {'databasename':'hist_layer','username':'user','password':'pass','host':'localhost:5432'}
 
 }
 
