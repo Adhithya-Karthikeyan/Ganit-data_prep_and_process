@@ -14,8 +14,8 @@
 
 		#############################################################################################################################
 
-	a. Open the script in Jupyter notebook for better understanding- data_preparation and data_processing
-	b. Call the data_preparation class 
+	- Open the script in Jupyter notebook for better understanding- data_preparation and data_processing
+	- Call the data_preparation class 
 		- **arguments required**
 			- target_file_system - str-  Mandatory (Local or S3)
 			- target_path - str -  not mandatory (used default path - CWD)
@@ -38,7 +38,7 @@
 
 		#############################################################################################################################
 
-	c. Once data_preperation class runs successfully call the data_processing class
+	- Once data_preperation class runs successfully call the data_processing class
 	- **Note** : the databasename must be present in postgressql before passing it as argument
 
 		- **arguments required**
