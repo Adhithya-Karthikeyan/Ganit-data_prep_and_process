@@ -1,0 +1,11 @@
+{
+	"data_preparation_target_file_system" : "local",
+	"data_preparation_target_path" : None,
+	"data_preparation_target_file_name": None,
+	"data_preparation_s3_creds" : None,
+	"data_preparation_s3_bucket" : None,
+	"data_processing_json_read_path" : None,
+	"data_processing_psql_creds": {'databasename':'hist_layer','username':'user','password':'pass'}
+
+}
+
