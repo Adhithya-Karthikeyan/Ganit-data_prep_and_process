@@ -17,11 +17,11 @@
 	- Open the script in Jupyter notebook for better understanding- data_preparation and data_processing
 	- Call the data_preparation class 
 		- **arguments required**
-			- target_file_system - Mandatory (Local or S3)
-			- target_path -  not mandatory (used default path - CWD)
-			- target_file_name - not Mandatory (used default name - currency_hist_records)
-			- s3_creds -  Mandatory (only when target_file_system is S3)
-			- s3_bucket - Mandatory (only when target_file_system is S3)
+			- target_file_system - str-  Mandatory (Local or S3)
+			- target_path - str -  not mandatory (used default path - CWD)
+			- target_file_name - str- not Mandatory (used default name - currency_hist_records)
+			- s3_creds -  str- Mandatory (only when target_file_system is S3)
+			- s3_bucket - str- Mandatory (only when target_file_system is S3)
 
 		- **EX:** data_preparation("local") 
 		
