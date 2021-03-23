@@ -15,9 +15,15 @@ class data_preparation:
 		self.LOGGER = logging.getLogger(type(self).__name__)
 		self.LOGGER.setLevel(logging.INFO)
 		
+
 		self.target_file_system = target_file_system
-		self.target_path = target_path
-		self.target_file_name = target_file_name
+
+		if target_path is None:
+			self.target_path = default_target_path
+
+		if target_file_name is None:
+			self.target_file_name = 'currency_hist_records'
+			
 		self.s3_creds = s3_creds
 		self.s3_bucket = s3_bucket
 		self.URL = "https://api.exchangeratesapi.io/history?start_at=2018-01-01"
