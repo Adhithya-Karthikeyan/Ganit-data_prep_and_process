@@ -1,0 +1,42 @@
+[2021-03-23 12:00:07,762] {scheduler_job.py:182} INFO - Started process (PID=36050) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:00:07,762] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 12:00:07,763] {logging_mixin.py:104} INFO - [2021-03-23 12:00:07,763] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:00:07,777] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:00:07,820] {logging_mixin.py:104} INFO - [2021-03-23 12:00:07,819] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:00:07,830] {logging_mixin.py:104} INFO - [2021-03-23 12:00:07,829] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:00:07,843] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.082 seconds
+[2021-03-23 12:09:08,197] {scheduler_job.py:182} INFO - Started process (PID=36544) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:09:08,198] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 12:09:08,198] {logging_mixin.py:104} INFO - [2021-03-23 12:09:08,198] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:09:08,211] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:09:08,248] {logging_mixin.py:104} INFO - [2021-03-23 12:09:08,248] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:09:08,257] {logging_mixin.py:104} INFO - [2021-03-23 12:09:08,257] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:09:08,265] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.069 seconds
+[2021-03-23 12:11:07,653] {scheduler_job.py:182} INFO - Started process (PID=36609) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:11:07,654] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 12:11:07,654] {logging_mixin.py:104} INFO - [2021-03-23 12:11:07,654] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:11:07,666] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:11:07,707] {logging_mixin.py:104} INFO - [2021-03-23 12:11:07,706] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:11:07,715] {logging_mixin.py:104} INFO - [2021-03-23 12:11:07,714] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:11:07,725] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.073 seconds
+[2021-03-23 12:13:11,604] {scheduler_job.py:182} INFO - Started process (PID=36699) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:13:11,606] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 12:13:11,607] {logging_mixin.py:104} INFO - [2021-03-23 12:13:11,607] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:13:11,630] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:13:11,695] {logging_mixin.py:104} INFO - [2021-03-23 12:13:11,695] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:13:11,711] {logging_mixin.py:104} INFO - [2021-03-23 12:13:11,710] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:13:11,729] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.126 seconds
+[2021-03-23 12:16:09,941] {scheduler_job.py:182} INFO - Started process (PID=36892) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:16:09,943] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 12:16:09,943] {logging_mixin.py:104} INFO - [2021-03-23 12:16:09,943] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:16:09,957] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:16:10,002] {logging_mixin.py:104} INFO - [2021-03-23 12:16:10,002] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:16:10,012] {logging_mixin.py:104} INFO - [2021-03-23 12:16:10,012] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:16:10,031] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.090 seconds
+[2021-03-23 12:17:37,830] {scheduler_job.py:182} INFO - Started process (PID=36969) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:17:37,832] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-03-23 12:17:37,832] {logging_mixin.py:104} INFO - [2021-03-23 12:17:37,832] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:17:37,851] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-03-23 12:17:37,901] {logging_mixin.py:104} INFO - [2021-03-23 12:17:37,901] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:17:37,914] {logging_mixin.py:104} INFO - [2021-03-23 12:17:37,914] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:17:37,930] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.100 seconds

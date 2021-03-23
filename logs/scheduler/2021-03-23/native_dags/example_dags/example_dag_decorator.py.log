@@ -1,0 +1,42 @@
+[2021-03-23 11:32:40,207] {scheduler_job.py:182} INFO - Started process (PID=35419) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 11:32:40,208] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-03-23 11:32:40,208] {logging_mixin.py:104} INFO - [2021-03-23 11:32:40,208] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 11:32:40,225] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 11:32:40,261] {logging_mixin.py:104} INFO - [2021-03-23 11:32:40,261] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 11:32:40,268] {logging_mixin.py:104} INFO - [2021-03-23 11:32:40,268] {dag.py:2273} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-03-23 11:32:40,278] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.071 seconds
+[2021-03-23 11:59:57,907] {scheduler_job.py:182} INFO - Started process (PID=36038) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 11:59:57,909] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-03-23 11:59:57,909] {logging_mixin.py:104} INFO - [2021-03-23 11:59:57,909] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 11:59:57,930] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 11:59:57,974] {logging_mixin.py:104} INFO - [2021-03-23 11:59:57,974] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 11:59:57,983] {logging_mixin.py:104} INFO - [2021-03-23 11:59:57,982] {dag.py:2273} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-03-23 11:59:57,995] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.089 seconds
+[2021-03-23 12:11:16,471] {scheduler_job.py:182} INFO - Started process (PID=36616) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:11:16,473] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-03-23 12:11:16,475] {logging_mixin.py:104} INFO - [2021-03-23 12:11:16,474] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:11:16,501] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:11:16,552] {logging_mixin.py:104} INFO - [2021-03-23 12:11:16,552] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:11:16,562] {logging_mixin.py:104} INFO - [2021-03-23 12:11:16,562] {dag.py:2273} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-03-23 12:11:16,576] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.106 seconds
+[2021-03-23 12:14:04,217] {scheduler_job.py:182} INFO - Started process (PID=36765) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:14:04,219] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-03-23 12:14:04,220] {logging_mixin.py:104} INFO - [2021-03-23 12:14:04,220] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:14:04,244] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:14:04,291] {logging_mixin.py:104} INFO - [2021-03-23 12:14:04,290] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:14:04,305] {logging_mixin.py:104} INFO - [2021-03-23 12:14:04,305] {dag.py:2273} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-03-23 12:14:04,320] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.104 seconds
+[2021-03-23 12:15:49,598] {scheduler_job.py:182} INFO - Started process (PID=36866) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:15:49,600] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-03-23 12:15:49,601] {logging_mixin.py:104} INFO - [2021-03-23 12:15:49,601] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:15:49,632] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:15:49,717] {logging_mixin.py:104} INFO - [2021-03-23 12:15:49,717] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:15:49,738] {logging_mixin.py:104} INFO - [2021-03-23 12:15:49,738] {dag.py:2273} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-03-23 12:15:49,761] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.165 seconds
+[2021-03-23 12:17:12,523] {scheduler_job.py:182} INFO - Started process (PID=36950) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:17:12,525] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-03-23 12:17:12,525] {logging_mixin.py:104} INFO - [2021-03-23 12:17:12,525] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:17:12,545] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-03-23 12:17:12,585] {logging_mixin.py:104} INFO - [2021-03-23 12:17:12,585] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:17:12,593] {logging_mixin.py:104} INFO - [2021-03-23 12:17:12,593] {dag.py:2273} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-03-23 12:17:12,605] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.082 seconds

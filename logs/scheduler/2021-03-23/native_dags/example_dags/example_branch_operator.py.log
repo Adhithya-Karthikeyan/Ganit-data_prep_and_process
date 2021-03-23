@@ -1,0 +1,42 @@
+[2021-03-23 11:59:48,547] {scheduler_job.py:182} INFO - Started process (PID=36025) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 11:59:48,548] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-03-23 11:59:48,548] {logging_mixin.py:104} INFO - [2021-03-23 11:59:48,548] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 11:59:48,565] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 11:59:48,603] {logging_mixin.py:104} INFO - [2021-03-23 11:59:48,603] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 11:59:48,616] {logging_mixin.py:104} INFO - [2021-03-23 11:59:48,616] {dag.py:2273} INFO - Setting next_dagrun for example_branch_operator to 2021-03-21 00:00:00+00:00
+[2021-03-23 11:59:48,627] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.082 seconds
+[2021-03-23 12:11:26,016] {scheduler_job.py:182} INFO - Started process (PID=36625) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:11:26,018] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-03-23 12:11:26,018] {logging_mixin.py:104} INFO - [2021-03-23 12:11:26,018] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:11:26,036] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:11:26,080] {logging_mixin.py:104} INFO - [2021-03-23 12:11:26,080] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:11:26,099] {logging_mixin.py:104} INFO - [2021-03-23 12:11:26,099] {dag.py:2273} INFO - Setting next_dagrun for example_branch_operator to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:11:26,112] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.097 seconds
+[2021-03-23 12:12:02,062] {scheduler_job.py:182} INFO - Started process (PID=36661) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:12:02,063] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-03-23 12:12:02,063] {logging_mixin.py:104} INFO - [2021-03-23 12:12:02,063] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:12:02,080] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:12:02,121] {logging_mixin.py:104} INFO - [2021-03-23 12:12:02,121] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:12:02,137] {logging_mixin.py:104} INFO - [2021-03-23 12:12:02,137] {dag.py:2273} INFO - Setting next_dagrun for example_branch_operator to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:12:02,149] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.088 seconds
+[2021-03-23 12:13:57,947] {scheduler_job.py:182} INFO - Started process (PID=36761) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:13:57,949] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-03-23 12:13:57,949] {logging_mixin.py:104} INFO - [2021-03-23 12:13:57,949] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:13:57,966] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:13:58,007] {logging_mixin.py:104} INFO - [2021-03-23 12:13:58,007] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:13:58,023] {logging_mixin.py:104} INFO - [2021-03-23 12:13:58,023] {dag.py:2273} INFO - Setting next_dagrun for example_branch_operator to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:13:58,034] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.088 seconds
+[2021-03-23 12:15:59,287] {scheduler_job.py:182} INFO - Started process (PID=36885) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:15:59,288] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-03-23 12:15:59,290] {logging_mixin.py:104} INFO - [2021-03-23 12:15:59,290] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:15:59,328] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:15:59,496] {logging_mixin.py:104} INFO - [2021-03-23 12:15:59,496] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:15:59,549] {logging_mixin.py:104} INFO - [2021-03-23 12:15:59,548] {dag.py:2273} INFO - Setting next_dagrun for example_branch_operator to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:15:59,587] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.301 seconds
+[2021-03-23 12:17:26,414] {scheduler_job.py:182} INFO - Started process (PID=36961) to work on /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:17:26,415] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-03-23 12:17:26,416] {logging_mixin.py:104} INFO - [2021-03-23 12:17:26,416] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:17:26,434] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-03-23 12:17:26,476] {logging_mixin.py:104} INFO - [2021-03-23 12:17:26,475] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:17:26,494] {logging_mixin.py:104} INFO - [2021-03-23 12:17:26,494] {dag.py:2273} INFO - Setting next_dagrun for example_branch_operator to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:17:26,507] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.094 seconds

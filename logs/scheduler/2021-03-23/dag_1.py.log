@@ -1,0 +1,106 @@
+[2021-03-23 12:07:18,739] {scheduler_job.py:182} INFO - Started process (PID=36429) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:07:18,740] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:07:18,740] {logging_mixin.py:104} INFO - [2021-03-23 12:07:18,740] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:07:18,746] {logging_mixin.py:104} INFO - [2021-03-23 12:07:18,745] {dagbag.py:305} ERROR - Failed to import: /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+Traceback (most recent call last):
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/adhithyakarthikeyan/airflow/dags/dag_1.py", line 5, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/operators/bash.py)
+[2021-03-23 12:07:18,747] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:07:18,795] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.057 seconds
+[2021-03-23 12:08:44,626] {scheduler_job.py:182} INFO - Started process (PID=36516) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:08:44,627] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:08:44,628] {logging_mixin.py:104} INFO - [2021-03-23 12:08:44,628] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:08:44,641] {logging_mixin.py:104} INFO - [2021-03-23 12:08:44,633] {dagbag.py:305} ERROR - Failed to import: /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+Traceback (most recent call last):
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/adhithyakarthikeyan/airflow/dags/dag_1.py", line 5, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/operators/bash.py)
+[2021-03-23 12:08:44,642] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:08:44,687] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.063 seconds
+[2021-03-23 12:11:37,411] {scheduler_job.py:182} INFO - Started process (PID=36635) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:11:37,413] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:11:37,414] {logging_mixin.py:104} INFO - [2021-03-23 12:11:37,414] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:11:37,424] {logging_mixin.py:104} INFO - [2021-03-23 12:11:37,421] {dagbag.py:305} ERROR - Failed to import: /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+Traceback (most recent call last):
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/adhithyakarthikeyan/airflow/dags/dag_1.py", line 5, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/operators/bash.py)
+[2021-03-23 12:11:37,425] {scheduler_job.py:641} WARNING - No viable dags retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:11:37,480] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.070 seconds
+[2021-03-23 12:14:12,682] {scheduler_job.py:182} INFO - Started process (PID=36771) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:14:12,695] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:14:12,696] {logging_mixin.py:104} INFO - [2021-03-23 12:14:12,696] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:14:12,885] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:14:12,898] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:14:12,914] {logging_mixin.py:104} INFO - [2021-03-23 12:14:12,914] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:14:12,989] {logging_mixin.py:104} INFO - [2021-03-23 12:14:12,988] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:14:13,008] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.328 seconds
+[2021-03-23 12:15:20,200] {scheduler_job.py:182} INFO - Started process (PID=36829) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:15:20,202] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:15:20,203] {logging_mixin.py:104} INFO - [2021-03-23 12:15:20,203] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:15:20,314] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:15:20,325] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:15:20,373] {logging_mixin.py:104} INFO - [2021-03-23 12:15:20,373] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:15:20,385] {logging_mixin.py:104} INFO - [2021-03-23 12:15:20,385] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:15:20,401] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.201 seconds
+[2021-03-23 12:16:39,323] {scheduler_job.py:182} INFO - Started process (PID=36916) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:16:39,325] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:16:39,325] {logging_mixin.py:104} INFO - [2021-03-23 12:16:39,325] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:16:39,403] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:16:39,409] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:16:39,415] {logging_mixin.py:104} INFO - [2021-03-23 12:16:39,415] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:16:39,447] {logging_mixin.py:104} INFO - [2021-03-23 12:16:39,447] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:16:39,458] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.136 seconds
+[2021-03-23 12:20:02,689] {scheduler_job.py:182} INFO - Started process (PID=37017) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:20:02,691] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:20:02,692] {logging_mixin.py:104} INFO - [2021-03-23 12:20:02,692] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:20:02,850] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:20:02,867] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:20:02,963] {logging_mixin.py:104} INFO - [2021-03-23 12:20:02,963] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:20:02,989] {logging_mixin.py:104} INFO - [2021-03-23 12:20:02,989] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:20:03,027] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.339 seconds
+[2021-03-23 12:20:34,825] {scheduler_job.py:182} INFO - Started process (PID=37032) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:20:34,826] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:20:34,826] {logging_mixin.py:104} INFO - [2021-03-23 12:20:34,826] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:20:34,885] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:20:34,892] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:20:34,932] {logging_mixin.py:104} INFO - [2021-03-23 12:20:34,932] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:20:34,941] {logging_mixin.py:104} INFO - [2021-03-23 12:20:34,941] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:20:34,952] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.128 seconds
+[2021-03-23 12:21:27,630] {scheduler_job.py:182} INFO - Started process (PID=37060) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:21:27,631] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:21:27,632] {logging_mixin.py:104} INFO - [2021-03-23 12:21:27,632] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:21:27,815] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:21:27,835] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:21:27,945] {logging_mixin.py:104} INFO - [2021-03-23 12:21:27,945] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:21:27,975] {logging_mixin.py:104} INFO - [2021-03-23 12:21:27,975] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-21 00:00:00+00:00
+[2021-03-23 12:21:27,995] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.367 seconds
+[2021-03-23 12:22:42,497] {scheduler_job.py:182} INFO - Started process (PID=37085) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:22:42,498] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:22:42,499] {logging_mixin.py:104} INFO - [2021-03-23 12:22:42,498] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:22:42,571] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:22:42,578] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:22:42,615] {logging_mixin.py:104} INFO - [2021-03-23 12:22:42,615] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:22:42,626] {logging_mixin.py:104} INFO - [2021-03-23 12:22:42,626] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-23 00:00:00+00:00
+[2021-03-23 12:22:42,637] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.141 seconds
+[2021-03-23 12:23:14,128] {scheduler_job.py:182} INFO - Started process (PID=37100) to work on /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:23:14,128] {scheduler_job.py:629} INFO - Processing file /Users/adhithyakarthikeyan/airflow/dags/dag_1.py for tasks to queue
+[2021-03-23 12:23:14,129] {logging_mixin.py:104} INFO - [2021-03-23 12:23:14,129] {dagbag.py:448} INFO - Filling up the DagBag from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:23:14,192] {logging_mixin.py:104} WARNING - /Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2021-03-23 12:23:14,198] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/adhithyakarthikeyan/airflow/dags/dag_1.py
+[2021-03-23 12:23:14,226] {logging_mixin.py:104} INFO - [2021-03-23 12:23:14,226] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-23 12:23:14,235] {logging_mixin.py:104} INFO - [2021-03-23 12:23:14,235] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-03-23 00:00:00+00:00
+[2021-03-23 12:23:14,244] {scheduler_job.py:190} INFO - Processing /Users/adhithyakarthikeyan/airflow/dags/dag_1.py took 0.118 seconds

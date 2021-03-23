@@ -1,0 +1,40 @@
+[2021-03-23 15:48:34,003] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: data_prep_and_process.data_preparation 2021-03-23T10:00:19.749860+00:00 [queued]>
+[2021-03-23 15:48:34,017] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: data_prep_and_process.data_preparation 2021-03-23T10:00:19.749860+00:00 [queued]>
+[2021-03-23 15:48:34,017] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 15:48:34,017] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2021-03-23 15:48:34,017] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 15:48:34,027] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): data_preparation> on 2021-03-23T10:00:19.749860+00:00
+[2021-03-23 15:48:34,031] {standard_task_runner.py:52} INFO - Started process 43379 to run task
+[2021-03-23 15:48:34,041] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'data_prep_and_process', 'data_preparation', '2021-03-23T10:00:19.749860+00:00', '--job-id', '45', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/master_dag.py', '--cfg-path', '/var/folders/yw/952dv3rd0332_2c7vqyq34vc0000gp/T/tmpcis77g9k', '--error-file', '/var/folders/yw/952dv3rd0332_2c7vqyq34vc0000gp/T/tmp6om6p73f']
+[2021-03-23 15:48:34,045] {standard_task_runner.py:77} INFO - Job 45: Subtask data_preparation
+[2021-03-23 15:48:39,096] {logging_mixin.py:104} INFO - Running <TaskInstance: data_prep_and_process.data_preparation 2021-03-23T10:00:19.749860+00:00 [running]> on host FACT-LAP-135.local
+[2021-03-23 15:48:44,153] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=skadhithya95@example.com
+AIRFLOW_CTX_DAG_OWNER=Adhithya_Karthikeyan
+AIRFLOW_CTX_DAG_ID=data_prep_and_process
+AIRFLOW_CTX_TASK_ID=data_preparation
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-23T10:00:19.749860+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-23T10:00:19.749860+00:00
+[2021-03-23 15:48:44,157] {data_preparation.py:54} INFO - URL to fetch records --> https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2021-03-23
+
+[2021-03-23 15:48:44,158] {data_preparation.py:57} INFO - Get request --> hitting the URL to fetch data
+[2021-03-23 15:48:44,329] {data_preparation.py:59} INFO - Get request ::: Status --> Successful
+
+[2021-03-23 15:48:44,345] {data_preparation.py:66} INFO - Display sample records fetched from URL
+
+[2021-03-23 15:48:44,347] {logging_mixin.py:104} INFO - {'CAD': 1.5466, 'HKD': 9.0327, 'ISK': 163.5, 'PHP': 56.407, 'DKK': 7.4455, 'HUF': 366.24, 'CZK': 27.131, 'AUD': 1.6533, 'RON': 4.8674, 'SEK': 10.3625, 'IDR': 17064.82, 'INR': 86.7555, 'BRL': 6.6916, 'RUB': 93.745, 'HRK': 7.5695, 'JPY': 121.93, 'THB': 36.249, 'CHF': 1.0695, 'SGD': 1.5903, 'PLN': 4.6018, 'BGN': 1.9558, 'TRY': 9.8332, 'CNY': 7.7962, 'NOK': 11.1128, 'NZD': 1.7565, 'ZAR': 18.8972, 'USD': 1.1652, 'MXN': 24.7327, 'ILS': 3.9681, 'GBP': 0.90053, 'KRW': 1320.61, 'MYR': 4.8443}
+[2021-03-23 15:48:44,348] {logging_mixin.py:104} INFO - 
+[2021-03-23 15:48:44,449] {data_preparation.py:143} INFO - Pushing JSON file to Local drive - Path ::: /Users/adhithyakarthikeyan/currency_hist_records.json
+
+[2021-03-23 15:48:44,576] {data_preparation.py:147} INFO - Status ::: Succcessful --> Currency historical records Path ::: /Users/adhithyakarthikeyan/currency_hist_records.json
+
+[2021-03-23 15:48:44,578] {data_preparation.py:180} INFO - Filtering historical data for currencies
+[2021-03-23 15:48:44,579] {data_preparation.py:190} INFO - Changing IND to INR to match the value in the JSON
+[2021-03-23 15:48:44,580] {data_preparation.py:191} INFO - Required_currencies['EUR', 'USD', 'JPY', 'CAD', 'GBP', 'NZD', 'INR']
+[2021-03-23 15:48:44,584] {data_preparation.py:203} INFO - Status successful --> Records filtered on ['EUR', 'USD', 'JPY', 'CAD', 'GBP', 'NZD', 'INR']
+[2021-03-23 15:48:44,585] {python.py:118} INFO - Done. Returned value was: <data_preparation.data_preparation object at 0x7fdbb4d3b5b0>
+[2021-03-23 15:48:44,590] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=data_prep_and_process, task_id=data_preparation, execution_date=20210323T100019, start_date=20210323T101834, end_date=20210323T101844
+[2021-03-23 15:48:44,604] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-23 15:48:44,619] {local_task_job.py:146} INFO - Task exited with return code 0

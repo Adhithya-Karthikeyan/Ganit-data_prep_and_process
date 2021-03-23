@@ -1,0 +1,57 @@
+[2021-03-23 15:54:32,154] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: data_prep_and_process.data_processing 2021-03-23T10:17:17.705601+00:00 [queued]>
+[2021-03-23 15:54:32,163] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: data_prep_and_process.data_processing 2021-03-23T10:17:17.705601+00:00 [queued]>
+[2021-03-23 15:54:32,163] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 15:54:32,163] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2021-03-23 15:54:32,163] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 15:54:32,174] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): data_processing> on 2021-03-23T10:17:17.705601+00:00
+[2021-03-23 15:54:32,177] {standard_task_runner.py:52} INFO - Started process 44898 to run task
+[2021-03-23 15:54:32,189] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'data_prep_and_process', 'data_processing', '2021-03-23T10:17:17.705601+00:00', '--job-id', '52', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/master_dag.py', '--cfg-path', '/var/folders/yw/952dv3rd0332_2c7vqyq34vc0000gp/T/tmp_r2tmp8g', '--error-file', '/var/folders/yw/952dv3rd0332_2c7vqyq34vc0000gp/T/tmprkwpjz3k']
+[2021-03-23 15:54:32,193] {standard_task_runner.py:77} INFO - Job 52: Subtask data_processing
+[2021-03-23 15:54:37,248] {logging_mixin.py:104} INFO - Running <TaskInstance: data_prep_and_process.data_processing 2021-03-23T10:17:17.705601+00:00 [running]> on host FACT-LAP-135.local
+[2021-03-23 15:54:42,297] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=skadhithya95@example.com
+AIRFLOW_CTX_DAG_OWNER=Adhithya_Karthikeyan
+AIRFLOW_CTX_DAG_ID=data_prep_and_process
+AIRFLOW_CTX_TASK_ID=data_processing
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-23T10:17:17.705601+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-23T10:17:17.705601+00:00
+[2021-03-23 15:54:42,300] {data_processing.py:40} INFO - SPARK df --> Reading JSON file from path
+[2021-03-23 15:54:42,301] {data_processing.py:41} INFO - /Users/adhithyakarthikeyan/currency_hist_records.json
+[2021-03-23 15:54:45,374] {data_processing.py:43} INFO - Status --> Successfully
+
+[2021-03-23 15:54:45,375] {data_processing.py:50} INFO - Removing duplicate values from df
+[2021-03-23 15:54:45,462] {data_processing.py:52} INFO - Printing the df 
+[2021-03-23 15:54:47,937] {logging_mixin.py:104} INFO - +----------+--------+-------+
+|      date|currency|   rate|
++----------+--------+-------+
+|2018-11-30|     RON| 4.6598|
+|2020-05-15|     HKD| 8.3693|
+|2018-02-13|     TRY| 4.6865|
+|2018-08-16|     GBP|0.89498|
+|2020-10-09|     NZD| 1.7821|
++----------+--------+-------+
+only showing top 5 rows
+[2021-03-23 15:54:47,938] {logging_mixin.py:104} INFO - 
+[2021-03-23 15:54:47,954] {taskinstance.py:1455} ERROR - 'host'
+Traceback (most recent call last):
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/Users/adhithyakarthikeyan/opt/anaconda3/lib/python3.8/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/adhithyakarthikeyan/airflow/Scripts/data_processing.py", line 27, in __init__
+    self.process()
+  File "/Users/adhithyakarthikeyan/airflow/Scripts/data_processing.py", line 33, in process
+    self.push_to_psql()
+  File "/Users/adhithyakarthikeyan/airflow/Scripts/data_processing.py", line 68, in push_to_psql
+    host = self.psql_creds['host']
+KeyError: 'host'
+[2021-03-23 15:54:47,963] {taskinstance.py:1496} INFO - Marking task as UP_FOR_RETRY. dag_id=data_prep_and_process, task_id=data_processing, execution_date=20210323T101717, start_date=20210323T102432, end_date=20210323T102447
+[2021-03-23 15:54:52,286] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -1,0 +1,25 @@
+[2021-03-23 14:49:09,724] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: data_prep_and_process.data_preperation 2021-03-22T00:00:00+00:00 [queued]>
+[2021-03-23 14:49:09,733] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: data_prep_and_process.data_preperation 2021-03-22T00:00:00+00:00 [queued]>
+[2021-03-23 14:49:09,734] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 14:49:09,734] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2021-03-23 14:49:09,734] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-23 14:49:09,745] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): data_preperation> on 2021-03-22T00:00:00+00:00
+[2021-03-23 14:49:09,748] {standard_task_runner.py:52} INFO - Started process 41003 to run task
+[2021-03-23 14:49:09,758] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'data_prep_and_process', 'data_preperation', '2021-03-22T00:00:00+00:00', '--job-id', '21', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/master_dag.py', '--cfg-path', '/var/folders/yw/952dv3rd0332_2c7vqyq34vc0000gp/T/tmp29kf11yb', '--error-file', '/var/folders/yw/952dv3rd0332_2c7vqyq34vc0000gp/T/tmpkdww6uwx']
+[2021-03-23 14:49:09,761] {standard_task_runner.py:77} INFO - Job 21: Subtask data_preperation
+[2021-03-23 14:49:14,809] {logging_mixin.py:104} INFO - Running <TaskInstance: data_prep_and_process.data_preperation 2021-03-22T00:00:00+00:00 [running]> on host FACT-LAP-135.local
+[2021-03-23 14:49:19,854] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=skadhithya95@example.com
+AIRFLOW_CTX_DAG_OWNER=adhithya
+AIRFLOW_CTX_DAG_ID=data_prep_and_process
+AIRFLOW_CTX_TASK_ID=data_preperation
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-22T00:00:00+00:00
+[2021-03-23 14:49:19,856] {logging_mixin.py:104} INFO - 1
+[2021-03-23 14:49:19,858] {logging_mixin.py:104} INFO - hello
+[2021-03-23 14:49:19,859] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-23 14:49:19,870] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=data_prep_and_process, task_id=data_preperation, execution_date=20210322T000000, start_date=20210323T091909, end_date=20210323T091919
+[2021-03-23 14:49:19,891] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-03-23 14:49:19,918] {local_task_job.py:146} INFO - Task exited with return code 0
