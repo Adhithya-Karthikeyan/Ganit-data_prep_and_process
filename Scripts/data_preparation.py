@@ -11,13 +11,38 @@ default_target_path = os.getcwd()
 
 class data_preparation:
 	
+	"""
+		Class data_preparation
+		- Gets the historical records from the URL in JSON format
+		- Creates a S3 session
+		- Saves the JSON historical records to local drive or S3 in JSON format
+		- Filters the historical records for the currencies ['EUR', 'USD', 'JPY', 'CAD', 'GBP', 'NZD','INR']
+		- Logs the entire process
+		
+		
+		Arguments required
+		- target_file_system -> str -> [S3 or Local drive]
+		- target_path -> str -> Path to put the JSON file (Puts in current working directory by default)
+		- target_file_name -> string -> Historical records JSON file name (by default uses currency_hist_records as filename)
+		- s3_creds -> dict -> Holds details of S3 Credentials
+			FORMAT:
+			s3_creds = {"RoleArn":"AWS_RoleArn",
+			"ExternalId" : "AWS_ExternalId",
+			"region_name" : "AWS_region_name",
+			"ServerSideEncryption" : "S3_ServerSideEncryption",
+			"SSEKMSKeyId" : "S3_SSEKMSKeyId"}
+		- s3_bucket -> str - S3 bucket name 
+	"""
+	
 	def __init__(self, target_file_system, target_path = default_target_path, target_file_name = "currency_hist_records", s3_creds = None, s3_bucket = None):
+		
+		# Create logger
 		self.LOGGER = logging.getLogger(type(self).__name__)
 		self.LOGGER.setLevel(logging.INFO)
 		
-
+		# Initialise variables
 		self.target_file_system = target_file_system
-
+		
 		if target_path is None:
 			self.target_path = default_target_path
 
@@ -27,12 +52,12 @@ class data_preparation:
 		self.s3_creds = s3_creds
 		self.s3_bucket = s3_bucket
 		self.URL = "https://api.exchangeratesapi.io/history?start_at=2018-01-01"
-		
+		# Call the process method to execute all the process [read from URL, write, filter]
 		self.process()
-		pass
 	
 	def process(self):
 		
+		# Master method to trigger all the process [read from URL, write, filter] 
 		hist_records = self.data_fetch()
 		self.save_data(hist_records)
 		self.filter_records(hist_records)
@@ -77,11 +102,6 @@ class data_preparation:
 	
 	def s3_client(self):
 		
-		if self.s3_creds is not None:
-			role_arn = self.s3_creds['RoleArn']
-			ext_id = self.s3_creds['ExternalId']
-			region = self.s3_creds['region_name']
-
 			"""
 				Note : The below part is tested using personal AWS account
 
@@ -94,6 +114,11 @@ class data_preparation:
 
 
 			"""
+		if self.s3_creds is not None:
+			role_arn = self.s3_creds['RoleArn']
+			ext_id = self.s3_creds['ExternalId']
+			region = self.s3_creds['region_name']
+
 			try:
 				self.LOGGER.info("** set up S3 client from Boto3 **")
 				AWS_sts = boto3.client('s3')
@@ -119,6 +144,13 @@ class data_preparation:
 			
 			
 	def structure_json(self, hist_records):
+		
+		""" 
+			Structure the historical records in proper format 
+
+			Arguments
+			- hist_records -> JSON - holds the hist records in JSON  from 2018-01-01 to current_date
+		"""
 		new_hist_records=[]
 		for dates in hist_records['rates']:
 			for nos in hist_records['rates'][dates]:
@@ -138,6 +170,11 @@ class data_preparation:
 			
 			- If no target_path is provided --> Save location will be in CWD
 			- Accepts two file systems --> Local, S3
+			
+			
+			Arguments
+			- hist_records -> JSON - holds the hist records in JSON  from 2018-01-01 to current_date
+			
 		"""
 		hist_records = self.structure_json(hist_records)
 		
@@ -182,6 +219,14 @@ class data_preparation:
 					
 					
 	def filter_records(self, hist_records):
+		
+		"""			
+			- Gets the historical currency records 
+			- Filters them on ['EUR', 'USD', 'JPY', 'CAD', 'GBP', 'NZD','INR']
+			
+			Arguments
+			- hist_records -> JSON - holds the hist records in JSON  from 2018-01-01 to current_date
+		"""
 
 		self.LOGGER.info("Filtering historical data for currencies")
 		
