@@ -16,14 +16,14 @@
 
 	- Open the script in Jupyter notebook for better understanding- data_preparation and data_processing
 	- Call the data_preparation class 
-		- arguments required
+		- **arguments required**
 			- target_file_system - Mandatory (Local or S3)
 			- target_path -  not mandatory (used default path - CWD)
 			- target_file_name - not Mandatory (used default name - currency_hist_records)
 			- s3_creds -  Mandatory (only when target_file_system is S3)
 			- s3_bucket - Mandatory (only when target_file_system is S3)
 
-		- EX: data_preparation("local") 
+		- **EX:** data_preparation("local") 
 		
 			OR
 
@@ -41,12 +41,12 @@
 	- Once data_preperation class runs successfully call the data_processing class
 	- **Note** : the databasename must be present in postgressql before passing it as argument
 
-		- arguments required
+		- **arguments required**
 			- json_read_path - str - Mandatory 
 			- psql_creds - data structure : Dict - Mandatory 
 				- {"databasename":"hist_layer","username":"adhithyakarthikeyan","password":"1234"}
 
 
-			- EX: data_processing("path_where json got saved in data_preparation class", {"databasename":"hist_layer","username":"adhithyakarthikeyan","password":"1234"})
+			- **EX:** data_processing("path_where json got saved in data_preparation class", {"databasename":"hist_layer","username":"adhithyakarthikeyan","password":"1234"})
 
 
