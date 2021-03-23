@@ -19,7 +19,7 @@ from data_processing import data_processing
 default_args = {
     'owner': 'Adhithya_Karthikeyan',
     'depends_on_past': False,
-    'email': ['skadhithya95@example.com'],
+    'email': ['skadhithya95@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
