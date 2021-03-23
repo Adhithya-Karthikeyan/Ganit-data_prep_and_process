@@ -5,6 +5,7 @@ import os
 import logging
 import sys
 
+default_read_path = os.getcwd()
 spark = SparkSession \
         .builder \
         .appName("PushToPsql") \
@@ -14,7 +15,7 @@ logging.basicConfig(stream=sys.stdout)
 
 class data_processing:
     
-    def __init__(self, json_read_path, psql_creds):
+    def __init__(self, json_read_path = default_read_path, psql_creds = None):
         
         """ 
             psql_creds - dict
