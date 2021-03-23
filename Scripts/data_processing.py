@@ -5,7 +5,6 @@ import os
 import logging
 import sys
 
-default_read_path = os.getcwd()
 spark = SparkSession \
         .builder \
         .appName("PushToPsql") \
@@ -15,13 +14,15 @@ logging.basicConfig(stream=sys.stdout)
 
 class data_processing:
     
-    def __init__(self, json_read_path = default_read_path, psql_creds = None):
+    def __init__(self, json_read_path, psql_creds):
         
         """ 
             psql_creds - dict
                 - databasename, username, password
         """
-        self.json_read_path = json_read_path
+        if json_read_path is None:
+        	self.json_read_path = os.getcwd()
+
         self.psql_creds = psql_creds
         self.LOGGER = logging.getLogger(type(self).__name__)
         self.LOGGER.setLevel(logging.INFO)
@@ -117,7 +118,4 @@ class data_processing:
                 self.LOGGER.info("Status --> Successful")
             except Exception as e:
                 self.LOGGER.info("Status --> Failed" + str(e))
-                
-
-        
-        
+               
